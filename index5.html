@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parent Login - Feins Academic</title>
+  <style>
+    /* Same CSS as Teacher and Student Login */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f6fa;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .login-page {
+      width: 350px;
+      margin: 40px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .login-page h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .login-form input {
+      width: 90%;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .login-form input:focus {
+      border-color: #3498db;
+      outline: none;
+    }
+
+    .login-btn {
+      width: 95%;
+      margin-top: 15px;
+      padding: 12px;
+      background: #3498db;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-btn:hover {
+      background: #2980b9;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #3498db;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Feins Academic School - Parent Login</h1>
+  </header>
+
+  <div class="login-page">
+    <h2>Parent Information Form</h2>
+
+    <form class="login-form" action="#" method="post">
+      <input type="text" placeholder="Full Name">
+      <input type="text" placeholder="Child Name">
+      <input type="text" placeholder="Child Roll Number">
+      <input type="text" placeholder="Contact Number">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button class="login-btn" type="submit">Login</button>
+    </form>
+
+    <div class="back-link">
+      <a href="index2.html">← Back to Homepage</a>
+    </div>
+  </div>
+
+</body>
+</html>
