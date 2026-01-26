@@ -104,6 +104,7 @@ nav img {
   margin: auto;
   text-align: center;
   padding-top: 100px;
+  
 }
 
 h2 {
@@ -141,16 +142,27 @@ h3 {
 /*,...............facilities...........*/
 .facilities {
   width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(image\ copy\ 6.png);
   margin: auto;
   text-align: center;
   padding: 100px;
 }
 
+.facilities-row {
+  display: flex;
+  flex-wrap: wrap;       /* automatically wrap boxes */
+  gap: 20px;             /* spacing between boxes */
+  justify-content: space-between;
+}
+
 .facilities-col {
-  flex-basis: 31%;
+  flex: 1 1 31%;         /* 3 boxes per row approx */
   border-radius: 10px;
-  margin-bottom: 5%;
   text-align: left;
+  background: #f2f2f2;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-bottom: 20px;   /* spacing for wrapped rows */
 }
 
 .facilities-col img {
@@ -158,14 +170,13 @@ h3 {
   border-radius: 10px;
 }
 
-.facilities-col p {
-  padding: 0;
+.facilities-col h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.facilities-col h3 {
-  margin-top: 16px;
-  margin-bottom: 15px;
-  text-align: left;
+.facilities-col p {
+  margin: 0;
 }
 
 /*..........CALL  to action section......*/
@@ -331,3 +342,4 @@ h3 {
   box-shadow: border-box;
 
 }
+
