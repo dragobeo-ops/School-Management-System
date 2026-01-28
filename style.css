@@ -141,12 +141,28 @@ h3 {
 }
 
 /*,...............facilities...........*/
+/* animation */
+.autoshow {
+    animation: text-appear both;
+    animation-timeline: view;
+}
+
+@keyframes text-appear {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .facilities {
   width: 80%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(image\ copy\ 6.png);
   margin: auto;
   text-align: center;
-  padding: 100px;
+  padding: 25px;
 }
 
 .facilities-row {
@@ -358,4 +374,3 @@ h3 {
   box-shadow: border-box;
 
 }
-

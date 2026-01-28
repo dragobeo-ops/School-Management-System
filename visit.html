@@ -19,7 +19,7 @@
                 <ul>
                     <li><a href="index2.html">Home</a></li>
                     <li><a href="login.html">Login</a></li>
-                    <li><a href="index6.html">Courses</a></li>
+                    <li><a href="index6.html">Notice</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -32,7 +32,8 @@
         <div class="row">
             <div class="about-col">
                 <h1 style="text-align: center;">Shaping minds, Building futures.</h1>
-                <p style="text-align: center; font-size: 23px;">Feins Academic School, established in 2025, is a leading institution
+                <p style="text-align: center; font-size: 23px;">Feins Academic School, established in 2025, is a leading
+                    institution
                     committed to academic excellence, innovation, and professional growth. With qualified teachers,
                     modern classrooms, well-equipped laboratories, and a supportive learning environment, we nurture
                     students to achieve academic success and become responsible members of society.</p>
@@ -46,13 +47,17 @@
     </section>
 
     <!--, ...........facilities...........-->
+    <link rel="stylesheet" href="animation.css">
     <section class="facilities">
-        <h1 style="color: aliceblue;"> Our Facilities</h1>
+        <div class="facilities autoshow">
+            <h1 style="color: black"> Our Facilities</h1>
+            <p style="font-weight: 50px; font-size: 25px;">Your Potential, Our Facilities</p>
+        </div>
 
         <div class="row">
             <div class="facilities-row">
                 <div class="facilities-col">
-                    <img src="image copy 2.png">
+                    <img src="image copy 2.png" class="imagereveal">
                     <h3>World Class library</h3>
                     <p>A school library is an essential place where students can explore a wide variety of books, gain
                         new
@@ -60,7 +65,7 @@
                         and strengthen their reading skills. </p>
                 </div><br>
                 <div class="facilities-col">
-                    <img src="image copy 4.png">
+                    <img src="image copy 4.png" class="imagereveal">
                     <h3>Tasty and Healthy Food</h3>
                     <p>Our school cafeteria serves tasty and healthy food that keeps students energized throughout the
                         day.
@@ -71,23 +76,23 @@
                     </p>
                 </div>
                 <div class="facilities-col">
-                    <img src="image 8.png" alt="">
+                    <img src="image 8.png"  class="imagereveal">
                     <h3>Well-Equipped Computer Lab</h3>
                     <p>Modern computers with the latest software to enhance digital learning and programming skills.</p>
                 </div>
                 <div class="facilities-col">
-                    <img src="image 10.png">
+                    <img src="image 10.png" class="imagereveal">
                     <h3>Well-Equipped Science Lab</h3>
                     <p>State of the art laboratories for Physics, Chemistry, and Biology, promoting hands-on experiments
                         and scientific exploration.</p>
                 </div>
                 <div class="facilities-col">
-                    <img src="image 9.png">
+                    <img src="image 9.png" class="imagereveal">
                     <h3>Safe Transpotation</h3>
                     <p>Reliable and secure transport services ensuring students’ safety to and from school.</p>
                 </div>
                 <div class="facilities-col">
-                    <img src="image 11.png">
+                    <img src="image 11.png" class="imagereveal">
                     <h3>ECA Activities</h3>
                     <p>A variety of extracurricular and co-curricular activities including sports, arts, and cultural
                         programs to nurture creativity, teamwork, and leadership skills.</p>
@@ -95,20 +100,19 @@
             </div>
         </div>
     </section>
-    <!-- css for visit -->
-    
-
-    
     <!-- +2 Programs Section - Feins Academic -->
     <div class="section" id="programs"
         style="background: linear-gradient(to right, #e6f0ff, #f0f4ff); padding: 60px 20px;">
+        <div class="hero">
 
-        <h2>Feins Academic +2 Programs & Activities</h2>
-        <p style="text-align:center; color:#274c9a; margin-bottom:40px; font-size: 25px;">
-            Our +2 programs are designed to develop academic excellence, practical skills, and overall personality for
-            all
-            faculties.
-        </p>
+            <h2>Feins Academic School Programs & Activities</h2>
+            <p style="text-align:center; color:#274c9a; margin-bottom:40px; font-size: 25px;">
+                Our School programs are designed to develop academic excellence, practical skills, and overall personality
+                for
+                all
+                faculties.
+            </p>
+        </div>
 
         <div class="program-grid">
 
@@ -357,15 +361,19 @@
         }
 
         /* Program Cards */
+        .appear {
+            animation: appear both;
+            animation-timeline: view();
+        }
         @keyframes appear {
             from {
                 opacity: 0;
-                transform: translateX(-100px);
+                transform: translateY(10px) scale(0.5);
             }
 
             to {
                 opacity: 1;
-                transform: translateX(0px);
+                transform: translateY(0px) scale(1);
 
             }
         }

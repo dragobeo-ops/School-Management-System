@@ -16,101 +16,59 @@
         <ul>
           <li><a href="index2.html">Home</a></li>
           <li><a href="login.html">Login</a></li>
-          <li><a href="index6.html">Courses</a></li>
+          <li><a href="index6.html">Notice</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
 
-    <h1>Our Courses</h1>
+    <h1>Notice & Activity Calendar</h1>
   </section>
 
-  <!-- +2 Programs Section - Feins Academic -->
-  <div class="section" id="programs"
-    style="background: linear-gradient(to right, #e6f0ff, #f0f4ff); padding: 60px 20px;">
+  
 
-    <h2>Feins Academic +2 Programs & Activities</h2>
-    <p style="text-align:center; color:#274c9a; margin-bottom:40px; font-size: 25px;">
-      Our +2 programs are designed to develop academic excellence, practical skills, and overall personality for all
-      faculties.
-    </p>
+  <div class="notice-board">
+    <h2>📢 Notice Board</h2>
 
-    <div class="program-grid">
+    <ul type="circle" id="notice-list" >
+      <!-- Notices will appear here -->
+        <marquee behavior="scroll" direction="up" scrollamount="5" height="200">
+          <li>The result of  Second Terminal Examination will be distributed on 16th Magh,Friday</li>
+       <li>IT Fiest will take place on 23rd and 25th Magh</li>
+      <li>Food Fiest will be held on 23rd Magh</li>
+      <li>The Pre-Board of class 12 and the Third Terminal Examination of class 11 will be from 1st Chaitra.</li>
+     </marquee>
+    </ul>
 
-      <!-- Science Faculty -->
-      <div class="card">
-        <h3>Science Courses</h3>
-        <p>Physics, Chemistry, Biology, and Math with preparation for entrance exams and competitive studies.</p>
-      </div>
+</div>
+<br>
+<br>
+<div class="activity-calendar">
+  <h2>Activity Calendar (Extra-Curricular)</h2>
 
-      <div class="card">
-        <h3>Science Practical / Lab Classes</h3>
-        <p>Hands-on laboratory sessions for Physics, Chemistry, and Biology to enhance understanding and experiment
-          skills.</p>
-      </div>
+  <ul type="circle" id="activity-list">
+    <marquee behavior="scroll" direction="up" scrollamount="5" height="200">
+      <li>10th Ashwin – Sports Meet 🏃‍♂️🏃‍♀️</li>
+      <li>15th Ashwin – Dashain Program 🪔</li>
+      <li>5th Kartik – Tihar Program 🪔🎉</li>
+      <li>20th Mangsir – Dance Competition 💃🕺</li>
+      <li>22nd Mangsir – Singing Competition 🎤🎶</li>
+      <li>25th Mangsir – Drawing Competition 🎨🖌️</li>
+      <li>28th Mangsir – Debate Competition 🗣️</li>
+      <li>10th Falgun – Music Program 🎹🥁</li>
+      <li>15th Falgun – Quiz Competition ❓📝</li>
+      <li>20th Falgun – Drama/Skits 🎭</li>
+      <li>25th Chaitra – Art & Craft Exhibition 🖼️✂️</li>
+      <li>28th Chaitra – Annual Cultural Program 🎉</li>
+    </marquee>
+  </ul>
+</div>
 
-      <!-- Management / Computer Faculty -->
-      <div class="card">
-        <h3>Management Courses</h3>
-        <p>Account, Economics, Business Studies, and Computer with practical project-based learning.</p>
-      </div>
 
-      <div class="card">
-        <h3>Regular Computer Classes</h3>
-        <p>Computer programming, ICT, office applications, and practical exercises for Computer faculty students.</p>
-      </div>
-
-      <div class="card">
-        <h3>Hotel Management Courses</h3>
-        <p>Food & Beverage, Front Office, Housekeeping, and practical hospitality classes for Hotel Management students.
-        </p>
-      </div>
-
-      <!-- Humanities / Optional -->
-      <div class="card">
-        <h3>Humanities Courses</h3>
-        <p>Optional courses including Social Studies, Psychology, and Economics for a balanced curriculum.</p>
-      </div>
-
-      <!-- General Programs -->
-      <div class="card">
-        <h3>Field Trips & Exposure</h3>
-        <p>Industrial visits, museums, botanical gardens, media houses, and science centers to enhance learning.</p>
-      </div>
-
-      <div class="card">
-        <h3>Extra-Curricular Activities</h3>
-        <p>Sports, debate, quiz competitions, art, music, dance, and participation in school clubs.</p>
-      </div>
-
-      <div class="card">
-        <h3>Professional Skill Development</h3>
-        <p>Leadership training, entrepreneurship workshops, financial literacy, and coding/robotics classes.</p>
-      </div>
-
-      <div class="card">
-        <h3>Special Programs</h3>
-        <p>MUN, guest lectures, motivation sessions, personality development, and social work activities.</p>
-      </div>
-
-      <div class="card">
-        <h3>Tours & Excursions</h3>
-        <p>Educational tours, hiking, cultural trips, and industrial visit tours to expand knowledge.</p>
-      </div>
-
-      <div class="card">
-        <h3>Exams & Evaluation</h3>
-        <p>Unit tests, terminal exams, pre-boards, practical exams, and continuous internal evaluation.</p>
-      </div>
-
-    </div>
-  </div>
+    
   <!--,................footer............-->
   <section class="footer">
-    <h4>About Us</h4>
-    <p>The school provides an inspiring environment that blends academic excellence with <br>personal growth, fostering
-      creativity, critical thinking, and confidence to prepare students for a dynamic world.</p>
-    <br>
+    
     <div class="icons">
 
       <i class="fa-brands fa-facebook"></i>
@@ -187,45 +145,8 @@
       font-family: sans-serif;
     }
 
-    .text-box {
-      width: 90%;
-      color: aliceblue;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-
-    .text-box h1 {
-      font-size: 50px;
-
-    }
-
-    .text-box p {
-      margin: 10px 0 40px;
-      font-size: 14px;
-      color: white;
-
-    }
-
-    .hero-btn {
-      display: inline-block;
-      text-decoration: none;
-      color: aliceblue;
-      border: 1px solid white;
-      padding: 13px;
-      background: transparent;
-      position: relative;
-      cursor: pointer;
-    }
-
-    .hero-btn:hover {
-      border: 1px solid #f44366;
-      background: #f44366;
-      transition: 1s;
-    }
-    /*...............courses...........*/
+    
+    
     .sub-header {
   height: 50vh;
   width: 100%;
@@ -240,95 +161,117 @@
   margin-top: 100px;
 }
 
-.about-us {
-  width: 80%;
-  margin: auto;
-  padding-top: 80px;
-  padding-bottom: 50px;
+
+  
+   /* Scope all styles under .notice-board */
+.notice-board {
+    width: 65%;                  /* Half-screen */
+    background: linear-gradient(145deg, #fffae6, #fff5d7); /* soft yellow gradient */
+    border-radius: 15px;
+    padding: 25px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 40px auto; /* center horizontally */
+    border-left: 6px solid #ffb700; /* accent line */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.about-col{
-  flex-basis: 48%;
-  padding: 30px 2px;
+/* Title inside notice board */
+.notice-board h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-.about-col img{
-  width: 100%;
-  }
-
-  .about-col h1{
+/* UL inside notice board */
+.notice-board ul {
+    list-style: circle inside;
     padding: 0;
-
-  }
-  .about-col p{
-    padding: 50px 0 25px;
-  }
-
-  .red-btn{
-    border: 1px solid #f44366;
-    background: transparent;
-    color: #f44366;
-  }
-  .red-btn:hover{
-    color: white;
-  }
-    /* Section Title */
-    #programs h2 {
-      text-align: center;
-      color: #1f3c88;
-      font-size: 32px;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-
-    /* Grid Layout */
-    .program-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-
-    /* Program Cards */
-    @keyframes appear{
-  from{
-    opacity: 0;
-   scale: 0.5;
-  }
-  to{
-    opacity: 1;
-   scale: 1;
-  }
+    margin: 0;
 }
-.program-grid {
-  animation: appear linear;
-  animation-timeline: view() ;
-  animation-range: entry 0% cover 40%;
+
+/* Marquee inside notice board */
+.notice-board marquee {
+    display: block;
+    max-height: 200px;
+    overflow: hidden;
+    padding-right: 10px;
 }
-    .program-grid .card {
-      background: white;
-      padding: 25px;
-      border-radius: 15px;
-      border-left: 6px solid #1f3c88;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
-    }
 
-    .program-grid .card:hover {
-      transform: translateY(-7px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-      border-color: #ff9900;
-    }
+/* Each notice item inside notice board */
+.notice-board li {
+    background: #fff7d6;
+    margin: 8px 0;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border-left: 5px solid #ffb700;
+    font-size: 16px;
+    color: #444;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+}
 
-    .program-grid .card h3 {
-      color: #1f3c88;
-      margin-bottom: 12px;
-      font-size: 20px;
-    }
+/* Hover effect inside notice board */
+.notice-board li:hover {
+    background: #fff0b3;
+    transform: translateX(3px);
+    transition: 0.3s;
+}
 
-    .program-grid .card p {
-      color: #333;
-      line-height: 1.6;
-    }
+.activity-calendar {
+    width: 65%;                  /* half screen */
+    background: linear-gradient(145deg, #fffae6, #fff5d7); /* soft yellow gradient */
+    border-radius: 15px;
+    padding: 25px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 40px auto; /* center horizontally */
+    border-left: 6px solid #ffb700; /* accent line */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title inside calendar */
+.activity-calendar h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* UL inside calendar */
+.activity-calendar ul {
+    list-style: circle inside;
+    padding: 0;
+    margin: 0;
+}
+
+/* Marquee inside calendar */
+.activity-calendar marquee {
+    display: block;
+    max-height: 200px;
+    overflow: hidden;
+    padding-right: 10px;
+}
+
+/* Each activity item inside calendar */
+.activity-calendar li {
+    background: #fff7d6;
+    margin: 8px 0;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border-left: 5px solid #ffb700;
+    font-size: 16px;
+    color: #444;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+}
+
+/* Hover effect inside calendar */
+.activity-calendar li:hover {
+    background: #fff0b3;
+    transform: translateX(3px);
+    transition: 0.3s;
+}
+
 
     /* Responsive Padding */
     @media(max-width:768px) {
