@@ -13,19 +13,32 @@
 
 <body>
     <section class="sub-header">
-        <nav>
-            <a href="index2.html"> <img src="image copy.png"> </a>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index2.html">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="index6.html">Notice</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+        <header>
+          <a href="index2.html" class="logo"> <img src="image copy.png"> </a>
+            <ul>
+              <li ><a href="index2.html" >Home</a></li>
+              <li ><a href="login.html">Login</a></li>
+              <li ><a href="index6.html">Notice</a></li>
+              <li ><a href="contact.html">Contact</a></li>
+            </ul>
+    </header>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header"); 
+        header.classList.toggle("sticky", window.scrollY > 0)
+      })
+    </script>
+    <section class="showcase">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="content">
+          <div class="text-box">
+            <h1>About us</h1>
+          </div>
 
-        <h1>About Us</h1>
+        </div>
+      </div>
+    </section>
         <br>
     </section>
     <section class="about us">

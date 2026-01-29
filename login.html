@@ -2,50 +2,69 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Feins Academic School</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feins Academic School</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <section class="sub-header">
-        <nav>
-            <a href="index2.html"> <img src="image copy.png"> </a>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index2.html">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="index6.html">Notice</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <h1>Login</h1>
-        <br>
-    </section>
+  <section class="sub-header">
+    <header>
+      <a href="index2.html" class="logo"> <img src="image copy.png"> </a>
+      <ul>
+        <li><a href="index2.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="index6.html">Notice</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </header>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0)
+      })
+    </script>
+    <section class="showcase">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="content">
+          <div class="text-box">
+            <h1>Login</h1>
+          </div>
 
-    <!--, ...........login............-->
-    <section class="login">
-    
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!--, ...........login............-->
+  <section class="login">
+
     <div class="row">
       <div class="login-col">
-      
-        
-        <a href="index3.html"><h1>Teacher Login</h1></a>
+
+
+        <a href="index3.html">
+          <h1>Teacher Login</h1>
+        </a>
 
       </div>
       <div class="login-col">
-        
-        
-        <a href="index4.html"> <h1>Student Login</h1></a>
+
+
+        <a href="index4.html">
+          <h1>Student Login</h1>
+        </a>
       </div>
       <div class="login-col">
-        
-        <a href="index5.html"><h1>Parent Login</h1></a>
+
+        <a href="index5.html">
+          <h1>Parent Login</h1>
+        </a>
       </div>
 
 
@@ -53,24 +72,24 @@
     </div>
 
   </section>
-    <!--,................footer............-->
-    <section class="footer">
-        <h4>About Us</h4>
-        <p>The school provides an inspiring environment that blends academic excellence with <br>personal growth,
-            fostering
-            creativity, critical thinking, and confidence to prepare students for a dynamic world.</p>
-        <br>
-        <div class="icons">
+  <!--,................footer............-->
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>The school provides an inspiring environment that blends academic excellence with <br>personal growth,
+      fostering
+      creativity, critical thinking, and confidence to prepare students for a dynamic world.</p>
+    <br>
+    <div class="icons">
 
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin-in"></i>
 
-        </div>
-        <br>
-        <p>Made with<i class="fa-regular fa-heart"></i>by Feins Academic School.</p>
-    </section>
+    </div>
+    <br>
+    <p>Made with<i class="fa-regular fa-heart"></i>by Feins Academic School.</p>
+  </section>
 </body>
 
 </html>
