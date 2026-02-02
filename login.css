@@ -1,0 +1,98 @@
+.form-container,
+.login-page {
+  width: 350px;
+  margin: 80px auto;
+  padding: 40px 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form heading */
+.form-container h2,
+.login-page h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 24px;
+}
+
+/* Inputs style */
+.form-container input,
+.login-page input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.form-container input:focus,
+.login-page input:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 5px rgba(255,204,0,0.5);
+}
+
+/* Submit button */
+.form-container button,
+.login-page button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #ffcc00;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-container button:hover,
+.login-page button:hover {
+  background: #e6b800;
+  transform: scale(1.05);
+}
+
+/* Back link */
+.back-link {
+  margin-top: 15px;
+}
+
+.back-link a {
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.back-link a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+/* Optional: responsive */
+@media screen and (max-width: 400px) {
+  .form-container,
+  .login-page {
+    width: 90%;
+    padding: 30px 20px;
+  }
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4db6ac; /* teal */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #39938b;
+}

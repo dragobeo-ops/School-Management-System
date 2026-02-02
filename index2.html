@@ -9,41 +9,54 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 
 <body>
+  <div>
+
+    <script src="https://cdn.botpress.cloud/webchat/v3.5/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/01/27/13/20260127134054-OB676NAQ.js" defer></script>
+    
+  </div>
   <section class="image">
     <header>
-          <a href="index2.html" class="logo"> <img src="image copy.png"> </a>
-            <ul>
-              <li ><a href="index2.html" >Home</a></li>
-              <li ><a href="login.html">Login</a></li>
-              <li ><a href="index6.html">Notice</a></li>
-              <li ><a href="contact.html">Contact</a></li>
-            </ul>
+      <a href="index2.html" class="logo"> <img src="image copy.png"> </a>
+      <ul>
+        <li><a href="index2.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="index6.html">Notice</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="explore.html" class="fa-solid fa-magnifying-glass"></a></li>
+      </ul>
     </header>
     <script type="text/javascript">
-      window.addEventListener("scroll", function(){
-        var header = document.querySelector("header"); 
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0)
       })
+    </script>
     </script>
     <section class="showcase">
       <div class="overlay"></div>
       <div class="container">
         <div class="content">
           <div class="text-box">
-            <h1>Feins Academic School</h1>
-            <p style="font-size: 20px;">Quality Education for a Better Future.
+            <h1 data-aos="fade-down" data-aso-duration="500" data-aos-delay="50">Feins Academic School</h1>
+            <p style="font-size: 20px;" data-aos="fade-up" data-aso-duration="500" data-aos-delay="50">Quality Education
+              for a Better Future.
             </p>
-            <a href="visit.html" class="btn">Visit us to know more.</a>
+            <div data-aos="zoom-in" data-aso-duration="500" data-aos-delay="50">
+              <a href="visit.html" class="btn" data-aos="zoom-out" data-aso-duration="500" data-aos-delay="50">Visit us
+                to know more.</a>
+            </div>
           </div>
 
         </div>
       </div>
     </section>
   </section>
-  
+
 
 
 
@@ -52,30 +65,43 @@
   <!--,...............call to action section.........-->
 
   <section class="cta">
+    <h2 data-aos="fade-up" data-aso-duration="500" data-aos-delay="0">Enroll For Our Various Online Courses</h2>
+    <a href="contact.html" class="hero-btn" data-aos="fade-up" data-aos-duration="500" data-aos-delay="1000">CONTACT
+      US</a>
+    </section>
 
-    <h2>Enroll For Our Various Online Courses</h2>
-    <a href="contact.html" class="hero-btn">CONTACT US</a>
-
-
-  </section>
   <!--,................footer............-->
   <section class="footer">
-    <h4>About Us</h4>
-    <p>The school provides an inspiring environment that blends academic excellence with <br>personal growth, fostering
-      creativity, critical thinking, and confidence to prepare students for a dynamic world.</p>
-    <br>
-    <div class="icons">
+    <h4 data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">About Us</h4>
+    <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">The school provides an inspiring environment that
+      blends academic excellence with <br>personal growth, fostering
+      creativity, critical thinking, and confidence to prepare students for a dynamic world.</p><br>
+    <div class="icons" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
 
       <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-twitter"></i>
       <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-linkedin-in"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-youtube"></i>
 
     </div>
-    <br>
-    <p>Made with<i class="fa-regular fa-heart"></i>by Feins Academic School.</p>
-    <p>© 2025 Feins Academic School • All Rights Reserved</p>
+    <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">Made with<i class="fa-regular fa-heart"></i>by
+      Feins Academic School.
+      <br>© 2025 Feins Academic School • All Rights Reserved
+    </p> <br></br>
   </section>
+  <br>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 2000,
+      easing: 'ease-in-out',
+      once: false,
+    });
+
+  </script>
 </body>
 
 

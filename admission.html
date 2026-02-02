@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admission Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #eef2f7;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .admission-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .admission-form h2 {
+      color: #4a90e2;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: 600;
+      margin-top: 15px;
+      display: block;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    .radio-group {
+      margin-top: 8px;
+    }
+
+    .radio-group input {
+      margin-right: 5px;
+      margin-left: 10px;
+    }
+
+    .submit-btn {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(135deg, #4a90e2, #6fb1fc);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="admission-form">
+    <h2>Admission Form</h2>
+
+    <form>
+      <label>Full Name</label>
+      <input type="text" required>
+
+      <label>Date of Birth</label>
+      <input type="date" required>
+
+      <label>Gender</label>
+      <div class="radio-group">
+        <input type="radio" name="gender" required> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Others
+      </div>
+
+      <label>Class Applying For</label>
+      <div class="radio-group">
+        <input type="radio" name="class" required> 1 <br>
+        <input type="radio" name="class"> 2 <br>
+        <input type="radio" name="class"> 3 <br>
+        <input type="radio" name="class"> 4  <br>
+        <input type="radio" name="class"> 5 <br>
+        <input type="radio" name="class"> 6 <br>
+        <input type="radio" name="class"> 7 <br>
+        <input type="radio" name="class"> 8 <br>
+        <input type="radio" name="class"> 9 <br>
+        <input type="radio" name="class"> 10
+      </div>
+
+      <label>Parent / Guardian Name</label>
+      <input type="text" required>
+
+      <label>Contact Number</label>
+      <input type="tel" required>
+
+      <label>Email</label>
+      <input type="email">
+
+      <label>Permanent Address</label>
+      <input type="text">
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
