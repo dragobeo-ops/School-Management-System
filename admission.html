@@ -2,77 +2,169 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Admission Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image and Admission Form</title>
   <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #eef2f7;
+    /* Reset and Global Styles */
+    * {
       margin: 0;
-      padding: 20px;
-    }
-
-    .admission-form {
-      max-width: 600px;
-      margin: 0 auto;
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    }
-
-    .admission-form h2 {
-      color: #4a90e2;
-      margin-bottom: 20px;
-    }
-
-    label {
-      font-weight: 600;
-      margin-top: 15px;
-      display: block;
-    }
-
-    input[type="text"],
-    input[type="date"],
-    input[type="tel"],
-    input[type="email"] {
-      width: 100%;
-      padding: 8px;
-      margin-top: 6px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
+      padding: 0;
       box-sizing: border-box;
     }
 
-    .radio-group {
-      margin-top: 8px;
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('image.png') no-repeat center center/cover;
+      color: #333;
+      min-height: 100vh;
     }
 
-    .radio-group input {
-      margin-right: 5px;
-      margin-left: 10px;
+    header {
+      text-align: center;
+      padding: 50px 0 20px 0;
+      color: #fff;
+      text-shadow: 0 0 5px rgba(0,0,0,0.5);
     }
 
-    .submit-btn {
-      margin-top: 25px;
+    h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #333;
+      text-align: center;
+    }
+
+    /* Admission Form */
+    .form-section {
+      width: 450px; /* Increased width */
+      margin: 40px auto 80px auto;
+      padding: 50px 40px; /* More padding */
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      text-align: center;
+      color: #fff;
+    }
+
+    .form-section form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-section label {
+      margin-bottom: 5px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .form-section input,
+    .form-section textarea {
       width: 100%;
-      padding: 12px;
-      background: linear-gradient(135deg, #4a90e2, #6fb1fc);
-      color: white;
-      border: none;
-      border-radius: 30px;
+      padding: 14px 15px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
       font-size: 16px;
+      outline: none;
+      transition: 0.3s;
+      background: rgba(255,255,255,0.9);
+      color: #111;
+    }
+
+    .form-section input:focus {
+      border-color: black;
+      box-shadow: 0 0 15px rgba(18, 18, 17, 0.5);
+    }
+
+    /* Radio Buttons */
+    .radio-group {
+  display: flex;
+  gap: 20px; /* space between options */
+  align-items: center; /* vertical alignment */
+  margin-bottom: 20px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* space between radio and text */
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.radio-group input[type="radio"] {
+  accent-color: #4CAF50; /* modern green color for selected radio */
+  width: 18px;
+  height: 18px;
+}
+    .radio-group input[type="radio"] {
+      margin-right: 5px;
       cursor: pointer;
     }
 
-    .submit-btn:hover {
-      opacity: 0.9;
+    /* Submit Button */
+    .form-section button.submit-btn {
+      width: 100%;
+      padding: 14px;
+      background: #ffcc00;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+      margin-bottom: 15px;
     }
+
+    .form-section button.submit-btn:hover {
+      background: #e6b800;
+      transform: scale(1.05);
+    }
+
+    /* Back to Home Link */
+    .back-home {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding: 12px;
+      background-color: #4db6ac;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .back-home:hover {
+      background-color: #39938b;
+      transform: scale(1.05);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .form-section {
+        width: 90%;
+        padding: 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .radio-group {
+        flex-direction: column;
+      }
+    }
+
   </style>
 </head>
 <body>
-  <div class="admission-form">
-    <h2>Admission Form</h2>
 
+  <header>
+    <h1>Welcome to Our School</h1>
+  </header>
+
+  <!-- Admission Form Section -->
+  <section class="form-section">
+    <h2>Admission Form</h2>
     <form>
       <label>Full Name</label>
       <input type="text" required>
@@ -83,23 +175,12 @@
       <label>Gender</label>
       <div class="radio-group">
         <input type="radio" name="gender" required> Male
-        <input type="radio" name="gender"> Female
-        <input type="radio" name="gender"> Others
+        <input type="radio" name="gender" required> Female
+        <input type="radio" name="gender" required> Others
       </div>
 
       <label>Class Applying For</label>
-      <div class="radio-group">
-        <input type="radio" name="class" required> 1 <br>
-        <input type="radio" name="class"> 2 <br>
-        <input type="radio" name="class"> 3 <br>
-        <input type="radio" name="class"> 4  <br>
-        <input type="radio" name="class"> 5 <br>
-        <input type="radio" name="class"> 6 <br>
-        <input type="radio" name="class"> 7 <br>
-        <input type="radio" name="class"> 8 <br>
-        <input type="radio" name="class"> 9 <br>
-        <input type="radio" name="class"> 10
-      </div>
+      <input type="text" required>
 
       <label>Parent / Guardian Name</label>
       <input type="text" required>
@@ -115,6 +196,10 @@
 
       <button type="submit" class="submit-btn">Submit</button>
     </form>
-  </div>
+
+    <!-- Back to Home -->
+    <a href="index2.html" class="back-home">Back to Home</a>
+  </section>
+
 </body>
 </html>
