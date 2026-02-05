@@ -32,7 +32,7 @@ padding: 50px 0px 0px 0px;
 .form-container h2,
 .login-page h2 {
   margin-bottom: 25px;
-  color: #333;
+  color: #000;
   font-size: 24px;
 }
 
@@ -77,20 +77,25 @@ padding: 50px 0px 0px 0px;
 }
 
 /* Back link */
-.back-link {
-  margin-top: 15px;
-}
-
-.back-link a {
-  color: #555;
+a{
   text-decoration: none;
-  font-size: 14px;
-  transition: 0.3s;
+}
+.back-home {
+  display: inline-block;          /* makes it behave like a button */
+  width: 100%;                     /* full width */
+  text-align: center;              /* centers the text */
+  padding: 12px;                   /* spacing inside the button */
+  background-color: #4db6ac;       /* button color */
+  color: white;                    /* text color */
+  text-decoration: none;           /* removes underline from link */
+  border-radius: 25px;             /* rounded edges */
+  font-weight: bold;               /* bold text */
+  transition: background 0.3s, transform 0.3s; /* smooth hover effect */
 }
 
-.back-link a:hover {
-  color: #ffcc00;
-  text-decoration: underline;
+.back-home:hover {
+  background-color: #39938b;       /* darker color on hover */
+  transform: scale(1.05);          /* slight grow effect on hover */
 }
 
 /* Optional: responsive */
@@ -119,7 +124,7 @@ padding: 50px 0px 0px 0px;
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4db6ac; /* teal */
+    background-color: #e6b800; /* teal */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -127,5 +132,6 @@ padding: 50px 0px 0px 0px;
 }
 
 .btn:hover {
-    background-color: #39938b;
+    background-color: #e6b800;
+      transform: scale(1.05);  
 }

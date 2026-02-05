@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-
+  <link rel="icon" type="image/png" href="image copy.png">
+<title>Feins Academic School</title>
 </head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
   integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -15,11 +16,11 @@
     <header>
       <a href="index2.html" class="logo"> <img src="image copy.png"> </a>
       <ul>
-        <li><a href="index2.html">Home</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="index6.html">Notice</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="explore.html" class="fa-solid fa-magnifying-glass"></a></li>
+        <li><a href="index2.html" class="a">Home</a></li>
+        <li><a href="login.html" class="a">Login</a></li>
+        <li><a href="index6.html" class="a">Notice</a></li>
+        <li><a href="contact.html" class="a">Contact</a></li>
+        <li><a href="explore.html" class="fa-solid fa-magnifying-glass" class="a"></a></li>
       </ul>
     </header>
     <script type="text/javascript">
@@ -128,7 +129,26 @@
   min-height: 200vh;
   
 }
-
+/* NAV BAR EFFECT */
+.a::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: 2px;
+  background-color: #4338CA;
+  transition: transform 0.3s ease;
+}
+.a:hover{
+  color: #4338CA;
+}
+.a:hover::after{
+  transform: translateX(-50%) scaleX(1);
+}
+/* main header */
 header {
   position: fixed;
   top: -50px;
